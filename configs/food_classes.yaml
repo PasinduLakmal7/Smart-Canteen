@@ -1,0 +1,6 @@
+# Food Detection Class Definitions
+# Use lower snake_case for "name" to match YOLO class outputs
+classes:
+  0:
+    name: "string_hoppers"
+    display_name: "String Hoppers"

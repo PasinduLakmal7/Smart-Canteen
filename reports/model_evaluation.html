@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Canteen - Food Model Evaluation</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --border: rgba(255, 255, 255, 0.1);
+            --primary: #38bdf8;
+            --accent: #22c55e;
+            --text: #f8fafc;
+            --muted: #94a3b8;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 30px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+        .meta {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+        .card-val {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--accent);
+            margin-top: 5px;
+        }
+        .card-lbl {
+            color: var(--muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+        th, td {
+            padding: 14px 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        th {
+            background: rgba(15, 23, 42, 0.6);
+            color: var(--primary);
+            font-weight: 600;
+        }
+        tr:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍱 Food Detection Model Evaluation</h1>
+        <div class="meta">
+            Evaluated on: <strong>20260816_161745</strong> | 
+            Split: <strong>VAL</strong> | 
+            Checkpoint: <code>best.pt</code>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-lbl">mAP @ 0.5</div>
+                <div class="card-val">0.995</div>
+            </div>
+            <div class="card">
+                <div class="card-lbl">mAP @ 0.5:0.95</div>
+                <div class="card-val">0.952</div>
+            </div>
+            <div class="card">
+                <div class="card-lbl">Precision</div>
+                <div class="card-val">1.000</div>
+            </div>
+            <div class="card">
+                <div class="card-lbl">Recall</div>
+                <div class="card-val">1.000</div>
+            </div>
+            <div class="card">
+                <div class="card-lbl">F1 Score</div>
+                <div class="card-val">1.000</div>
+            </div>
+        </div>
+
+        <h2>Per-Class Performance</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Food Category</th>
+                    <th>Precision</th>
+                    <th>Recall</th>
+                    <th>mAP@0.5:0.95</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            <tr>
+                <td><strong>chicken_curry</strong></td>
+                <td>0.9996</td>
+                <td>1.0000</td>
+                <td>0.9516</td>
+            </tr>
+            
+            <tr>
+                <td><strong>dhal_curry</strong></td>
+                <td>0.9996</td>
+                <td>1.0000</td>
+                <td>0.9516</td>
+            </tr>
+            
+            <tr>
+                <td><strong>fish_curry</strong></td>
+                <td>0.9996</td>
+                <td>1.0000</td>
+                <td>0.9516</td>
+            </tr>
+            
+            <tr>
+                <td><strong>gotukola_mallum</strong></td>
+                <td>0.9996</td>
+                <td>1.0000</td>
+                <td>0.9516</td>
+            </tr>
+            
+            <tr>
+                <td><strong>hoppers</strong></td>
+                <td>0.9996</td>
+                <td>1.0000</td>
+                <td>0.9516</td>
+            </tr>
+            
+            <tr>
+                <td><strong>kiribath</strong></td>
+                <td>0.9996</td>
+                <td>1.0000</td>
+                <td>0.9516</td>
+            </tr>
+            
+            <tr>
+                <td><strong>kottu</strong></td>
+                <td>0.9996</td>
+                <td>1.0000</td>
+                <td>0.9516</td>
+            </tr>
+            
+            <tr>
+                <td><strong>lunu_sambol</strong></td>
+                <td>0.9996</td>
+                <td>1.0000</td>
+                <td>0.9516</td>
+            </tr>
+            
+            <tr>
+                <td><strong>pittu</strong></td>
+                <td>0.9996</td>
+                <td>1.0000</td>
+                <td>0.9516</td>
+            </tr>
+            
+            <tr>
+                <td><strong>pol_sambol</strong></td>
+                <td>0.9996</td>
+                <td>1.0000</td>
+                <td>0.9516</td>
+            </tr>
+            
+            <tr>
+                <td><strong>rice_and_curry</strong></td>
+                <td>0.9996</td>
+                <td>1.0000</td>
+                <td>0.9516</td>
+            </tr>
+            
+            <tr>
+                <td><strong>string_hoppers</strong></td>
+                <td>0.9996</td>
+                <td>1.0000</td>
+                <td>0.9516</td>
+            </tr>
+            
+            <tr>
+                <td><strong>watalappam</strong></td>
+                <td>0.9996</td>
+                <td>1.0000</td>
+                <td>0.9516</td>
+            </tr>
+            
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+        

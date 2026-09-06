@@ -1,0 +1,103 @@
+{
+  "timestamp": "20260816_092920",
+  "model_path": "/app/runs/food_detection/run_baseline_20260816_090727/weights/best.pt",
+  "split": "val",
+  "precision": 0.9697,
+  "recall": 0.8857,
+  "f1_score": 0.9258,
+  "map50": 0.9779,
+  "map50_95": 0.8174,
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "chicken_curry",
+      "map50_95": 0.8174430368914241,
+      "precision": 0.9696562103842109,
+      "recall": 0.8857142857142857
+    },
+    {
+      "class_id": 1,
+      "class_name": "dhal_curry",
+      "map50_95": 0.8174430368914241,
+      "precision": 0.9696562103842109,
+      "recall": 0.8857142857142857
+    },
+    {
+      "class_id": 2,
+      "class_name": "fish_curry",
+      "map50_95": 0.8174430368914241,
+      "precision": 0.9696562103842109,
+      "recall": 0.8857142857142857
+    },
+    {
+      "class_id": 3,
+      "class_name": "gotukola_mallum",
+      "map50_95": 0.8174430368914241,
+      "precision": 0.9696562103842109,
+      "recall": 0.8857142857142857
+    },
+    {
+      "class_id": 4,
+      "class_name": "hoppers",
+      "map50_95": 0.8174430368914241,
+      "precision": 0.9696562103842109,
+      "recall": 0.8857142857142857
+    },
+    {
+      "class_id": 5,
+      "class_name": "kiribath",
+      "map50_95": 0.8174430368914241,
+      "precision": 0.9696562103842109,
+      "recall": 0.8857142857142857
+    },
+    {
+      "class_id": 6,
+      "class_name": "kottu",
+      "map50_95": 0.8174430368914241,
+      "precision": 0.9696562103842109,
+      "recall": 0.8857142857142857
+    },
+    {
+      "class_id": 7,
+      "class_name": "lunu_sambol",
+      "map50_95": 0.8174430368914241,
+      "precision": 0.9696562103842109,
+      "recall": 0.8857142857142857
+    },
+    {
+      "class_id": 8,
+      "class_name": "pittu",
+      "map50_95": 0.8174430368914241,
+      "precision": 0.9696562103842109,
+      "recall": 0.8857142857142857
+    },
+    {
+      "class_id": 9,
+      "class_name": "pol_sambol",
+      "map50_95": 0.8174430368914241,
+      "precision": 0.9696562103842109,
+      "recall": 0.8857142857142857
+    },
+    {
+      "class_id": 10,
+      "class_name": "rice_and_curry",
+      "map50_95": 0.8174430368914241,
+      "precision": 0.9696562103842109,
+      "recall": 0.8857142857142857
+    },
+    {
+      "class_id": 11,
+      "class_name": "string_hoppers",
+      "map50_95": 0.8174430368914241,
+      "precision": 0.9696562103842109,
+      "recall": 0.8857142857142857
+    },
+    {
+      "class_id": 12,
+      "class_name": "watalappam",
+      "map50_95": 0.8174430368914241,
+      "precision": 0.9696562103842109,
+      "recall": 0.8857142857142857
+    }
+  ]
+}

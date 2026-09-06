@@ -1,0 +1,153 @@
+# ==============================================================================
+# Smart Canteen AI — Git Ignore Configuration
+# ==============================================================================
+
+# --- Python & Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Python Virtual Environments ---
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Node.js & Frontend Caches (Admin & Kiosk) ---
+node_modules/
+*/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# --- Frontend Build Artifacts ---
+dist/
+dist-ssr/
+frontend-admin/dist/
+frontend-kiosk/dist/
+.vite/
+frontend-admin/.vite/
+frontend-kiosk/.vite/
+*.local
+
+# --- SQLite Database & Runtime Lock Files ---
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+data/*.db
+data/*.db-wal
+data/*.db-shm
+database/*.db
+
+# --- Datasets, Archives & Raw Media (Keep folder structures via .gitkeep) ---
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+data/*.zip
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/rejected/*
+!data/rejected/.gitkeep
+data/annotations/*
+!data/annotations/.gitkeep
+data/face_data/*
+!data/face_data/.gitkeep
+data/raw_food_images/
+data/yolo_dataset/
+data/face_dataset/
+
+# --- Model Weights & Large Checkpoints ---
+*.pt
+*.pth
+*.onnx
+*.engine
+*.bin
+*.pkl
+*.h5
+models/candidates/*
+!models/candidates/.gitkeep
+models/production/*
+!models/production/.gitkeep
+models/food_detection/best.pt
+models/food_detection/last.pt
+models/face_recognition/yunet.onnx
+models/face_recognition/face_recognizer_fast.onnx
+
+# --- Pipeline Runs & Prediction Outputs ---
+runs/*
+!runs/.gitkeep
+outputs/predictions/*
+!outputs/predictions/.gitkeep
+outputs/detections/*
+!outputs/detections/.gitkeep
+outputs/logs/*
+!outputs/logs/.gitkeep
+outputs/test_results/*
+!outputs/test_results/.gitkeep
+
+# --- Testing, Linting & Coverage ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+
+# --- IDE & Editor Artifacts ---
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*~
+
+# --- Operating System Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# --- Antigravity & Agent Scratch Artifacts ---
+.system_generated/
+.tempmediaStorage/
+.user_uploaded/
+scratch/

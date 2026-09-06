@@ -1,0 +1,6 @@
+paths:
+  dataset_dir: "data/yolo_dataset"
+  raw_images_dir: "data/raw_food_images"
+  model_dir: "models/food_detection"
+  output_dir: "outputs/detections"
+  log_dir: "outputs/logs"

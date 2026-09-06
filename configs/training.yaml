@@ -1,0 +1,38 @@
+# Training Hyperparameters and Execution Settings
+model:
+  base_weights: "yolo11n.pt"
+  imgsz: 640
+
+# Adaptive hardware configuration defaults (override automatically based on system)
+hardware:
+  cpu_max_workers: 2
+  cpu_batch_size: 4
+  gpu_batch_size: 16
+
+# Training Modes
+modes:
+  smoke:
+    epochs: 2
+    patience: 2
+    batch: 2
+    save_period: -1
+  baseline:
+    epochs: 15
+    patience: 5
+    batch: 4
+    save_period: -1
+  final:
+    epochs: 50
+    patience: 8
+    batch: 8
+    save_period: 5
+
+# Optimizer and augmentations
+optimizer:
+  lr0: 0.01
+  lrf: 0.01
+  momentum: 0.937
+  weight_decay: 0.0005
+  warmup_epochs: 3.0
+  val: true
+  plots: true

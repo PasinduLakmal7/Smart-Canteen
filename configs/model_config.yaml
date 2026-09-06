@@ -1,0 +1,12 @@
+yolo:
+  model_type: "yolo11n.pt"  # Pre-trained base weights
+  imgsz: 640                # Input image size for YOLO
+  epochs: 50                # Number of training epochs
+  batch: 16                 # Batch size
+  workers: 4                # Number of dataloader workers
+  device: "cpu"             # Local fallback (Colab will override to "0" or "cuda")
+  save_period: -1           # Save best/last model only (set positive integer to save intermediate checkpoints)
+  val: true                 # Validate model during training
+  confidence_threshold: 0.25 # Default detection confidence threshold
+  iou_threshold: 0.45       # Default NMS IoU threshold
+  

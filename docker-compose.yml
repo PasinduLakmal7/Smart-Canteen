@@ -1,0 +1,24 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: smart_canteen_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./src:/app/src
+      - ./database:/app/database
+      - ./tests:/app/tests
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./outputs:/app/outputs
+      - ./runs:/app/runs
+      - ./reports:/app/reports
+      - ./configs:/app/configs
+      - ./manage.py:/app/manage.py
+    environment:
+      - PYTHONPATH=/app
+      - LOG_LEVEL=INFO
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

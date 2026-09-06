@@ -1,0 +1,65 @@
+[
+  {
+    "employee_code": "EMP001",
+    "first_name": "Nimal",
+    "last_name": "Perera",
+    "department": "IT / Engineering",
+    "email": "nimal.perera@canteen.ai",
+    "profile": {
+      "age": 32,
+      "height_cm": 172.0,
+      "weight_kg": 74.0,
+      "daily_calorie_target": 2200.0,
+      "diet_type": "normal",
+      "health_goal": "maintain",
+      "notes": "Prefers balanced protein-rich meals for lunch."
+    },
+    "preferences": {
+      "likes": ["string_hoppers", "chicken_rolls", "samosa"],
+      "dislikes": ["noodles"],
+      "avoid": []
+    }
+  },
+  {
+    "employee_code": "EMP002",
+    "first_name": "Kasun",
+    "last_name": "Silva",
+    "department": "Human Resources",
+    "email": "kasun.silva@canteen.ai",
+    "profile": {
+      "age": 28,
+      "height_cm": 180.0,
+      "weight_kg": 85.0,
+      "daily_calorie_target": 1800.0,
+      "diet_type": "vegetarian",
+      "health_goal": "weight_loss",
+      "notes": "Vegetarian diet, aiming for a caloric deficit."
+    },
+    "preferences": {
+      "likes": ["elawalu_roti", "vegi_rolls", "uludu_vade"],
+      "dislikes": [],
+      "avoid": ["chicken_curry", "fish_curry", "chicken_rolls"]
+    }
+  },
+  {
+    "employee_code": "EMP003",
+    "first_name": "Dilini",
+    "last_name": "Fernando",
+    "department": "Finance & Accounting",
+    "email": "dilini.fernando@canteen.ai",
+    "profile": {
+      "age": 35,
+      "height_cm": 160.0,
+      "weight_kg": 52.0,
+      "daily_calorie_target": 2000.0,
+      "diet_type": "normal",
+      "health_goal": "high_protein",
+      "notes": "Focusing on strength training and high-protein intake."
+    },
+    "preferences": {
+      "likes": ["string_hoppers", "malu_pan", "kiribath"],
+      "dislikes": ["pastry"],
+      "avoid": []
+    }
+  }
+]

@@ -1,0 +1,22 @@
+# Smart Canteen Food Detection Application Settings
+server:
+  host: "127.0.0.1"
+  port: 8000
+  reload: false
+
+inference:
+  confidence_threshold: 0.40
+  iou_threshold: 0.45
+  max_detections: 30
+  device: "auto"  # auto, cpu, cuda
+
+webcam:
+  camera_index: 0
+  frame_width: 640
+  frame_height: 480
+  display_fps: true
+
+paths:
+  production_model: "models/production/best.pt"
+  output_predictions: "outputs/predictions"
+  output_logs: "outputs/logs"
